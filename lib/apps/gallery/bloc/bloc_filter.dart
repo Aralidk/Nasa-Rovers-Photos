@@ -12,7 +12,7 @@ class FilterBloc extends Bloc<FilterEvent, FilterState> {
       if (event is AddFilter) {
         try {
           emit(ResponseLoading());
-          var res = await NasaHelper.imagesBySol(
+          var res = await NasaHelper.fetchRover(
               rover: rover,
               sol: event.sol,
               camera: event.camera.toString().split('.').last);

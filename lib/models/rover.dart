@@ -1,4 +1,3 @@
-
 abstract class Rover {
   String get name;
   List<Camera> get availableCameras;
@@ -10,6 +9,7 @@ class Curiosity extends Rover {
 
   @override
   List<Camera> get availableCameras => [
+
     Camera.FHAZ,
     Camera.RHAZ,
     Camera.MAST,
@@ -26,6 +26,7 @@ class Spirit extends Rover {
 
   @override
   List<Camera> get availableCameras => [
+
     Camera.FHAZ,
     Camera.RHAZ,
     Camera.NAVCAM,
@@ -40,6 +41,7 @@ class Opportunity extends Rover {
 
   @override
   List<Camera> get availableCameras => [
+
     Camera.FHAZ,
     Camera.RHAZ,
     Camera.NAVCAM,
